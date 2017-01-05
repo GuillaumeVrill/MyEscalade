@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MyEscaladeDemo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_topoguide">TopoguideActivity</string>
+    <string name="title_activity_performance">PerformanceActivity</string>
+
+    <string name="btn_topoguide">Topoguide</string>
+    <string name="btn_performance">Performance</string>
+
+    <string name="footer">MyEscalade.com - 2017</string>
+
+    <string name="topo_title">Topoguide</string>
+    <string name="topo_title_2">Saurier - secteur du bas\n(Mont Dore - Auvergne, France)</string>
+    <string name="topo_title_num_voie">Voie 4: </string>
+    <string name="topo_title_cotation">Cotation: </string>
+    <string name="topo_title_hauteur">Hauteur: </string>
+    <string name="topo_title_type">Type: </string>
+    <string name="topo_title_equipement">Equipement: </string>
+    <string name="topo_title_materiel">Materiel: </string>
+    <string name="topo_title_conseil">Conseils: </string>
+    <string name="title_activity_register_performance">RegisterPerformanceActivity</string>
+
+    <string name="perf_btn_go">C\'est parti !</string>
+    <string name="perf_btn_pause">Forcer l\'arret</string>
+
+    <string name="perf_demo_title">Saurier - L\'horreur est\nhumaine - 7a</string>
+    <string name="perf_demo_btn">Retour à l\'accueil</string>
+</resources>

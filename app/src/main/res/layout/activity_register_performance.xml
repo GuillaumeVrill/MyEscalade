@@ -1,0 +1,66 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.guillaume.myescaladedemo.RegisterPerformanceActivity">
+
+        <!-- List View pour les temps: -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_size"
+            android:orientation="horizontal">
+
+            <com.guillaume.myescaladedemo.NonScrollableListView
+                android:id="@+id/perf_timelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.guillaume.myescaladedemo.NonScrollableListView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_size"
+            android:textAppearance="@style/topo_title2_style"
+            android:gravity="center"
+            android:text="Chronomètre:" />
+
+        <Chronometer
+            android:id="@+id/perf_chrono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_lateral_size"
+            android:layout_marginBottom="@dimen/margin_size"
+            android:textAppearance="@style/perf_title_style"
+            android:layout_gravity="center"
+            android:background="@drawable/tv_border" />
+
+        <Button
+            android:id="@+id/perf_gobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_size"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_perf_border"
+            android:textColor="@android:color/white"
+            android:text="@string/perf_btn_go" />
+
+    </LinearLayout>
+
+</ScrollView>

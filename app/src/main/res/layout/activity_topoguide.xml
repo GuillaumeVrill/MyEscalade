@@ -1,0 +1,242 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.guillaume.myescaladedemo.TopoguideActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/topo_title"
+        android:textAppearance="@style/topo_title_style"
+        android:layout_margin="@dimen/margin_small_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/topo_title_2"
+        android:textAppearance="@style/topo_title2_style"
+        android:layout_margin="@dimen/margin_small_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_small_size" >
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/topo_title_num_voie"
+            android:padding="@dimen/padding_size"
+            android:textAppearance="@style/topo_title2_style" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="L'horeur est humaine"
+            android:padding="@dimen/padding_size"
+            android:textAppearance="@style/normal_text_style" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/right_arrow" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_size"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/padding_size"
+                    android:text="@string/topo_title_cotation"
+                    android:textAppearance="@style/topo_title2_style" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7a"
+                    android:textAppearance="@style/normal_text_style" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_small_size"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/padding_size"
+                    android:text="@string/topo_title_hauteur"
+                    android:textAppearance="@style/topo_title2_style" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="37 mètres"
+                    android:textAppearance="@style/normal_text_style" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_small_size"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/padding_size"
+                    android:text="@string/topo_title_type"
+                    android:textAppearance="@style/topo_title2_style" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dalle de granit"
+                    android:textAppearance="@style/normal_text_style" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="@dimen/margin_size"
+            android:src="@drawable/map" />
+
+        <ImageView
+            android:id="@+id/btn_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="@dimen/margin_size"
+            android:src="@drawable/btn_go" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_small_size"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding_size"
+                android:text="@string/topo_title_equipement"
+                android:textAppearance="@style/topo_title2_style" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14 points, relais chainé double"
+                android:textAppearance="@style/normal_text_style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_small_size"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding_size"
+                android:text="@string/topo_title_materiel"
+                android:textAppearance="@style/topo_title2_style" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Equipement standard (casque, magnésie, chaussons, etc.) \n- Corde 90m, résistance moyenne à la friction \n- 15 dégaines minimum"
+                android:textAppearance="@style/normal_text_style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_small_size"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding_size"
+                android:text="@string/topo_title_conseil"
+                android:textAppearance="@style/topo_title2_style" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Grimpez en opposition au départ \n- Dans le crux, favorisez les fissures et chargez vos pieds"
+                android:textAppearance="@style/normal_text_style" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/footer" />
+
+</LinearLayout>

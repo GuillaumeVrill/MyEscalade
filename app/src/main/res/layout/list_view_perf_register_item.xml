@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_size"
+    android:layout_marginLeft="@dimen/margin_size"
+    android:layout_marginRight="@dimen/margin_size"
+    android:background="@drawable/lv_item_border">
+
+    <ImageView
+        android:id="@+id/point_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_size"
+        android:src="@drawable/point"/>
+
+    <TextView
+        android:id="@+id/num_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/padding_size"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAppearance="@style/topo_title2_style"
+        android:text="Point X" />
+
+    <TextView
+        android:id="@+id/time_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/padding_size"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:textAppearance="@style/topo_title2_style"
+        android:text="--:--" />
+
+</LinearLayout>
