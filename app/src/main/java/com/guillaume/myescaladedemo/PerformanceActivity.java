@@ -35,7 +35,7 @@ public class PerformanceActivity extends Activity {
                 Intent i= new Intent();
                 i.setAction(Intent.ACTION_VIEW);
                 i.addCategory(Intent.CATEGORY_BROWSABLE);
-                i.setData(Uri.parse("https://fr.linkedin.com/in/guillaume-vrilliaux-7412a5109"));
+                i.setData(Uri.parse("https://github.com/GuillaumeVrill/MyEscalade"));
                 startActivity(i);
             }
         });
